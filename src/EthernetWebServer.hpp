@@ -500,7 +500,7 @@ class EthernetWebServer
       {
 				_streamFileCore(file.size(), file.name(), contentType, code);
 				
-    		return _currentClient.write(file);     
+    		return _customClientWrite(file);
       }
 
 		////////////////////////////////////////
